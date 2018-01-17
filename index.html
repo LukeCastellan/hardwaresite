@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en-us">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="Resources/CSS/styles.css"/>
+	<link rel="icon" type="image/png" href="hardwaresite/Resources/Favicon/favicon-32x32.png" sizes="32x32"/> 
+	<link rel="icon" type="image/png" href="hardwaresite/Resources/Favicon/favicon-16x16.png" sizes="16x16"/>
+	<title>System Unit Components</title>
+</head>
+<body>
+	<h1 id=thetop>ICS2O7 Hardware Project: Documentation</h1>
+		<h2 class=subtitles>Paul Kuang | Richard Liu | Michael Wu | Shrey Sati</h2>
+		<hr>
+		<h1>About:</h1>
+		<p class=bodytext>Welcome to the image documentation repository for our ICS2O7 Hardware Project! We will be covering interactions between different
+		hardware components.</p>
+		<h2 class=subtitles id=tableofcontent>Table Of Contents:</h2>
+		<ul class=tableofcontent>
+			<li><a href=#Case>Computer Case</a></li>
+			<li><a href=#Motherboard>Computer Motherboard</a></li>
+			<li><a href=#PSU>Power Supply Unit</a></li>
+			<li><a href=#RAM>Random Access Memory</a></li>
+			<li><a href=#CPU>Central Processing Unit</a></li>
+			<li><a href=#CPUFan>CPU Fan &amp; Heat-sink</a></li>
+			<li><a href=#GPU>Graphics Processing Unit</a></li>
+			<li><a href=#HDD>Hard Disk Drive(s)</a></li>
+			<li><a href=#Interaction>How the Components Interact Together</a></li>
+			<li><a href=#Bib>Bibliography</a></li>
+		</ul>
+	<hr>
+	<h1 id=Case>Computer Case</h1>
+	<p class=bodytext>The Computer Case is essentially a large box which is used to hold all the hardware components (Eg. CPU, RAM etc.) together and protect them from dust.</p>
+	<p class=imgcaption>The image below is the computer case before it was taken apart:</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/OpenedCase.jpg" alt="An opened computer case, with all components untouched" width="480" height="640">  
+	<hr>
+	<h1 id=Motherboard>Computer Motherboard</h1>
+	<p class=bodytext>The Motherboard is the most crucial component required to make a computer function, it is a Printed Circuit Board (The largest in the computer, in fact.) that holds components like the CPU and GPU
+	while also communicating with other components such as the HDD and Audio Card in order to perform calculations, file read/write etc.
+	It also receives electrical power from the PSU and allocates it to components accordingly.</p>
+	<p class=imgcaption>The image below is the motherboard (A Foxconn LS-36) without attached components:</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/Motherboard.jpg" alt="A Foxconn LS-36 Motherboard, without any attached components" width="640" height="480">
+	<p class=imgcaption>The image below is the peripheral ports of the motherboard:</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/MotherboardPorts.jpg" alt="Peripheral Ports on the Foxconn LS-36 Motherboard" width="640" height="480">
+		<h2 class=subtitles>Riser Card</h2>
+			<p class=bodytext>The Riser Card is a Printed Circuit Board that allows for the addition of Expansion Cards when the case cannot offer enough vertical space,
+		the card plugs into the motherboard and allows the Expansion Cards to be installed horizontally, saving space. It also picks up a multitude of signal lines (often bused) via a single connector 
+		(usually an edge connector) on a motherboard and distributes them via dedicated connectors on the card.</p>
+		<p class=imgcaption>The image below is the Riser Card for the motherboard</p>
+		<img class=componentimg src="/hardwaresite/Resources/Images/RiserCard.jpg" alt="A Riser Card for the Foxconn LS-36 motherboard" width="480" height="480">
+		<p class=imgcaption>The image below is the Riser Card, other side</p>
+		<img class=componentimg src="/hardwaresite/Resources/Images/RiserCard2.jpg" alt="A Riser Card for the Foxconn LS-36 motherboard, other side" width="480" height="480">
+	<hr>
+	<h1 id=PSU>Power Supply Unit</h1>
+	<p class=bodytext>The Power Supply Unit is a converter to switch AC Power to low voltage DC power that components are able to use.
+	Some PSUs are manually switched for the input voltage, while others automatically adapt based on the AC source. </p>
+	<p class=imgcaption>The image below is the power unit with the casing opened</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/PowerSupplyUnit.jpg" alt="An opened power supply unit showing wires and internal components" width="480" height="640">
+	<p class=imgcaption>The image below is the power unit above, with the fan</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/PSU+Fan.jpg" alt="An opened power supply unit with the fan" width="480" height="640">
+	<hr>
+	<h1 id=RAM>Random Access Memory</h1>
+	<p class=bodytext>The Random Access Memory is a type of volatile memory (Will lose contents without electrical power.) designed as temporary data storage for when the CPU is processing.
+	It cannot be used for long term data storage as it is easily overwritten and will lose all contents without electrical power.</p>
+	<p class=imgcaption>The image below is the 1GB DDR RAM from the computer:</p>
+		<img class=componentimg src="/hardwaresite/Resources/Images/RAM.jpg" alt="A 1GB DDR RAM stick" width="480" height="480">
+	<hr>
+	<h1 id=CPU>Central Processing Unit</h1>
+	<p class=bodytext>The Central Processing Unit is what allows for computer itself to run. It uses billions of microtransistors and other extremely small components to perform arithmetic operations,
+	data input/output and control operations given by binary instructions. In terms of larger components, the CPU is made of Control Units (To interpret binary instructions, and Arithmetic Logic Units (to perform calculations).</p>
+	<p class=imgcaption>The images below is the CPU</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/CPU.jpg" alt="An Intel Pentium 4 CPU" width="480" height="480">
+	<img class=componentimg src="/hardwaresite/Resources/Images/CPU2.jpg" alt="An Intel Pentium 4 CPU" width="480" height="480">
+	<hr>
+	<h1 id=CPUFan>CPU Fan &amp; Heatsink</h1>
+	<p class=bodytext>The Heatsink and Fan assembly allows the CPU to maintain reasonable temperature while operating. This is because the CPU performs many calculations per second,
+	while being extremely small in volume. Thus creating a lot of heat it cannot disperse itself. That is where the assembly comes in to use. The Heatsink is essentially a large block of metal that absorbs heat from the CPU using Thermal Paste;
+	While the fan disperses any remaining heat</p>
+	<p class=imgcaption>The image below is the CPU Heatsink</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/Heatsink.jpg" alt="A CPU Heatsink" width="480" height="480">
+	<p class=imgcaption>The images below is the CPU Fan</p>
+	<img class=componentimg src="/hardwaresite/Resources/Images/CPUFan.jpg" alt="A CPU Fan" width="480" height="480">
+	<img class=componentimg src="/hardwaresite/Resources/Images/CPUFan2.jpg" alt="A CPU Heatsink" width="480" height="480">
+	<p class=bodytext></p>
+	<hr>
+	<h1 id=GPU>Graphics Processing Unit</h1>
+	<p class=bodytext></p>
+	<hr>
+	<h1 id=HDD>Hard Disk Drive(s)</h1>
+	<p class=bodytext>The Hard Disk Drive is</p>
+	<hr>
+	<h1 id=Interaction>How the Components Interact Together</h1>
+	<p class=bodytext></p>
+	<hr>
+	<h1 id=Bib>Bibliography (In APA)</h1>
+	<ul>
+		<li>Computer Case - Definition. (n.d.). Retrieved January 16, 2018, from https://www.bleepingcomputer.com/glossary/computer-case/</li>
+		<li>Motherboard. (2018, January 14). Retrieved January 15, 2018, from https://en.wikipedia.org/wiki/Motherboard</li>
+		<li>Riser card. (2018, January 15). Retrieved January 15, 2018, from https://en.wikipedia.org/wiki/Riser_card</li>
+		<li>Motherboard. (2018, January 14). Retrieved January 15, 2018, from https://en.wikipedia.org/wiki/Motherboard</li>
+		<li>Power supply unit (computer). (2018, January 12). Retrieved January 15, 2018, from https://en.wikipedia.org/wiki/Power_supply_unit_(computer)</li>
+		<li>Central processing unit. (2018, January 15). Retrieved January 16, 2018, from https://en.wikipedia.org/wiki/Central_processing_unit</li>
+	</ul>
+	<hr>
+	    <a href="https://validator.w3.org/nu/?doc=https%3A%2F%2Flukecastellan.github.io%2Fhardwaresite%2F">
+      <img style="border:0;width:88px;height:31px" src="http://touque.ca/common/images/html5_with_css3_+_semantics.png" alt="Valid HTML!"/></a>
+	<p><a href="https://jigsaw.w3.org/css-validator/validator?uri=https%3A%2F%2Flukecastellan.github.io%2Fhardwaresite%2F&profile=css3svg&usermedium=all&warning=1&vextwarning=&lang=en ">
+        <img style="border:0;width:88px;height:31px"
+            src="https://jigsaw.w3.org/css-validator/images/vcss"
+            alt="Valid CSS!" /></a></p>
+</body>
+</html>
